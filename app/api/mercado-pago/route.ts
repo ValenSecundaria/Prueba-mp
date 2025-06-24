@@ -17,9 +17,9 @@ export async function POST(req: NextRequest) {
         },
       ],
       back_urls: {
-        success: "http://localhost:3000/mercado-pago/success",
-        failure: "http://localhost:3000/mercado-pago/failure",
-        pending: "http://localhost:3000/mercado-pago/pending",
+        success: "https://prueba-mp-kappa.vercel.app/mercado-pago/success",
+        failure: "https://prueba-mp-kappa.vercel.app/mercado-pago/failure",
+        pending: "https://prueba-mp-kappa.vercel.app/mercado-pago/pending",
       },
        auto_return: "approved", // Hay que probarlo remotamente, de forma local rompe la llamada al link de mp
     };
