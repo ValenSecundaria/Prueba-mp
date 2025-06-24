@@ -22,7 +22,12 @@ export async function POST(req: NextRequest) {
         pending: "https://prueba-mp-kappa.vercel.app/mercado-pago/pending",
       },
        auto_return: "approved", // Hay que probarlo remotamente, de forma local rompe la llamada al link de mp
+      payer: {
+        email: "test_user_1045774516@testuser.com"
+      }
+
     };
+    
 
     const response = await mercadopago.preferences.create(preference);
     console.log("Init point generado:", response.body.init_point);
