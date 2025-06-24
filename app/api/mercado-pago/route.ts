@@ -25,6 +25,7 @@ export async function POST(req: NextRequest) {
     };
 
     const response = await mercadopago.preferences.create(preference);
+    console.log("Init point generado:", response.body.init_point);
 
     return NextResponse.json({ init_point: response.body.init_point });
   } catch (error) {
