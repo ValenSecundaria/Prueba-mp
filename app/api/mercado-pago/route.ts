@@ -21,7 +21,7 @@ export async function POST(req: NextRequest) {
         failure: "https://prueba-mp-kappa.vercel.app/mercado-pago/failure",
         pending: "https://prueba-mp-kappa.vercel.app/mercado-pago/pending",
       },
-       auto_return: "approved", // Hay que probarlo remotamente, de forma local rompe la llamada al link de mp
+       auto_return: "approved", 
       payer: {
         email: "test_user_1045774516@testuser.com"
       }
